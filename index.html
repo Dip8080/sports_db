@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sports db</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-green-500">
+    <header>
+        <section class=" w-3/4 rounded m-auto p-5 mt-5 bg-green-500 grid justify-items-center shadow">
+            <div class="">
+                <input id="input_field" class="w-80% bg-green-200 p-2 rounded" type="text"
+                    placeholder="search your player">
+                <button id="search_btn" class="shadow  bg-green-500 p-2 rounded">search</button>
+            </div>
+        </section>
+    </header>
+    <main class="w-4/5 m-auto my-6">
+        <div id="loader" class="loading">Loading&#8230;</div>
+        <section id="player_details" class="w-4/5 m-auto my-4 rounded drop-shadow-md">
+            <div class="bg-red-700 p-5 my-2" id="show_error" style="display: none;">
+                <h1>player not found. try another player</h1>
+            </div>
+            <div class="bg-red-700 p-5 my-2" id="show_error2" style="display: none;">
+                <h1>API problem . try later . now fuck off bitch</h1>
+            </div>
+        </section>
+
+        <section>
+            <div id="search_result" class="grid grid-cols-3 gap-3 py-5">
+
+                <!--    <div class="bg-blue-300 rounded shadow p-5">
+                       <div>
+                           <img src="" alt="">
+                       </div>
+                       <h1>something</h1>
+                       <p>something something something</p>
+                   </div> -->
+        </section>
+
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
